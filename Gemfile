@@ -46,3 +46,6 @@ gem 'rails_config'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
+
+# Use devise as authentication
+gem 'devise'
