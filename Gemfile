@@ -7,23 +7,22 @@ gem 'json', '~> 1.7.7'
 gem 'rake', '10.1.0'
 
 group :development do
-  gem 'sqlite3'
+  # gem 'sqlite3'
   gem 'pry-rails'
 end
 
 group :production do
   gem 'thin'
-  gem 'pg'
   gem 'rails_12factor'
 end
 
 # Gems used only for assets and not required
 # in production environments by default.
-group :assets do
+# group :assets do
   gem 'sass-rails',   '~> 4.0.0'
   gem 'coffee-rails', '~> 4.0.0'
   gem 'uglifier', '>= 1.0.3'
-end
+# end
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
@@ -39,3 +38,6 @@ gem 'amazon_flex_pay'
 
 # Configuration File
 gem 'rails_config'
+
+# Use postgresql as the database for Active Record
+gem 'pg'
