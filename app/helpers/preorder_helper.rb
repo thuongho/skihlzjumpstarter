@@ -33,4 +33,19 @@ module PreorderHelper
   def order_count(payment_option)
     Order.where(payment_option_id: payment_option).count(:token) # count of orders that have a token from amazon and are for this payment option
   end
+
+  # def countdown_time_in_natural_language(from_time, to_time)
+  #   to_time = 
+  # end
+
+  # def time_left
+  #   exp_time = Settings.expiration_date.to_i
+  #   time = Time.now.to_i
+  #   # time.to_time.to_i
+  #   time_diff = exp_time - time
+  #   time_convert = Time.at(time_diff)
+  #   # distance_of_time_in_words(time_convert)
+  #   distance_of_time_in_words_to_now(Time.now)
+    
+  # end
 end

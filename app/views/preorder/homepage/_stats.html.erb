@@ -1,4 +1,6 @@
 <div class="wrapper clearfix">
+<div class="row">
+<div class="col-lg-7 col-md-8">
   <div id="video">
     <% if Settings.use_video_placeholder %>
       <div id="video_image">
@@ -16,7 +18,8 @@
       <iframe width='512' height='385' src="<%= video_url %>"></iframe>
     <% end %>
   </div>
-
+</div>
+<div class="col-lg-5 col-md-4">
   <div id="backing">
     <ul>
       <li class="stats" id="backers">
@@ -30,8 +33,10 @@
 
       <% if Settings.expiration_date.present? %>
         <li class="stats" id="days">
+
           <%= distance_of_time_in_words_to_now(Settings.expiration_date).gsub(/\D/, "") %>
           <span><%= distance_of_time_in_words_to_now(Settings.expiration_date).gsub(/\d/, "").gsub("about", "") %> left</span>
+          <!--  -->
         </li>
       <% else %>
         <li class="stats" id="days">
@@ -63,5 +68,6 @@
     </div>
     
   </div>
-  
+</div>
+</div>  
 </div>

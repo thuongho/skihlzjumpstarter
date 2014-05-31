@@ -49,3 +49,8 @@ gem 'pg'
 
 # Use devise as authentication
 gem 'devise'
+
+# Omniauth for login through remote sites like facebook or twitter
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
