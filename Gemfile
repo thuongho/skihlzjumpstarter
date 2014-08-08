@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.0'
+ruby '2.1.1'
 
 gem 'rails', '4.0.0'
 gem 'json', '~> 1.7.7'
@@ -35,7 +35,7 @@ group :development, :test do
 end
 
 # jQuery
-gem 'jquery-rails'
+gem 'jquery-rails', "~> 2.3.0"
 gem 'jquery-ui-rails'
 
 # Amazon Flexible Payments gem

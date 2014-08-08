@@ -12,9 +12,9 @@
 //
 //= require html5shiv-printshiv
 //= require jquery
+//= require jquery-ui
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require jquery.ui.all
 //= require jquery.details
 //= require jquery.textchange
 //= require preorder
